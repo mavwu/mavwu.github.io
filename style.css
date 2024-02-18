@@ -1,11 +1,4 @@
-@keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-}
+
 
 body {
     background-color: #c8c8c8b2;
@@ -19,28 +12,21 @@ header {
     padding: 10px;
 }
 
-nav {
-    background-color: #2980b9;
-    padding: 10px;
-    
-}
-
 a {
     text-decoration: none;
     padding: 30px;
     transition: 0.3s;
 }
 
+li {
+    list-style: none;
+}
+
 section {
     padding: 10px;
 }
 
-footer {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
+
 
 #welcomeText {
     animation: blink 2s infinite;
@@ -49,4 +35,471 @@ footer {
 #links a {
     color: silver;
     
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: silver;
+    font-family: Lora, serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: blue;
+    height: 66px;
+    width: 100%;
+}
+
+header .site-heading-container {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+    
+}
+
+header .site-heading {
+    margin: 9px;
+    font-family: Candal;
+}
+
+header .site-heading span {
+    color:aqua;
+}
+
+header ul {
+    list-style: none;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 10px;
+    color: grey;
+    background-color: white;
+}
+
+header ul li ul li a.logout {
+    color: red;
+}
+
+header ul li ul li a:hover {
+    background: rgb(70, 70, 129);
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    background: rgb(2, 2, 204);
+    transition: 0.5s;
+}
+
+header .menu-toggle {
+    display: none;
+}
+
+header .menu-close {
+    display: none;
+}
+
+header .menu-toggle:hover {
+    color: rgb(34, 39, 108);
+    transition: all .3s;
+}
+
+header .menu-close:hover {
+    color: rgb(34, 39, 108);
+    transition: all .3s;
+}
+
+header * {
+    color: white;
+}
+
+.drop-icon {
+    font-size: .8em;
+    
+}
+
+/* WRAPPPERR */
+.page-wrapper {
+    min-height: 100%;
+}
+
+.page-wrapper .buttons {
+    padding: 10px;
+    float: right;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+
+.page-wrapper .buttons button {
+    font-size: large;
+    margin: 5px;
+    border-radius: 15px;
+    float: right;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    border: none;
+}
+
+button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.page-wrapper .buttons button:hover {
+    background-color: rgb(9, 9, 186);
+    transition: all .3s;
+}
+
+.page-wrapper .buttons button a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Footer *************************/
+.footer {
+    color: white;
+    background: blue;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.footer .logo-text {
+    font-family: Candal, serif;
+}
+
+.footer .footer-content {
+    height: 400px;
+    display: flex;
+    z-index: 2;
+    text-align: center;
+}
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 25px;
+    background: blue;
+    width: 100%; 
+    border: 1px solid white;
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2 {
+    color: white;
+}
+
+.footer .footer-content .about h1 span {
+    color: aqua;
+}
+
+.footer .footer-bottom {
+    background: rgb(6, 6, 201);
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+    border: 1px solid green;
+    
+}
+
+.footer .footer-content .about .contact span {
+    display: block;
+    font-size: 1.1em;
+    margin: 8px;
+}
+
+.footer .footer-content .about .socials a {
+    color: white;
+    /* border: 1px solid grey; */
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.footer .footer-content .about .socials a:hover {
+    border: 1px solid white;
+    color: black;
+    transition: all .3s;
+}
+
+.footer .footer-content .links ul .quick-links {
+    list-style: none;
+}
+
+.footer .footer-content .links ul .quick-links a {
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.footer .footer-content .links ul .quick-links a:hover {
+    color: black;
+    margin-left: 15px;
+    transition: all .3s;
+}
+
+.footer .footer-content .links .button-to-top {
+    background: rgb(65, 65, 234);
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 150px;
+    height: 40px;
+    transition: all .7s;
+    
+}
+
+.footer .footer-content .links .button-to-top:hover {
+    background: rgb(55, 55, 174);
+    width: 200px;
+    transition: all .3s;
+}
+
+.footer .footer-content .contact-form .contact-input {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .7rem 1.2rem;
+}
+
+.footer .footer-content .contact-form .contact-input:focus {
+    background: rgb(235, 231, 231);
+    
+}
+
+.btn-big {
+    width: 150px;
+    height: 30px;
+    line-height: 1.3rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgb(65, 65, 234);
+    transition: all .3s;
+    float: right;
+}
+
+.btn-big:hover {
+    background: rgb(55, 55, 174);
+    transition: all .3s;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 750px) {
+
+    header {
+        z-index: 3;
+    }
+
+    header ul {
+        width: 100px;
+        display: none;
+    }
+
+    header .menu-toggle {
+        display: block;
+        float: right;
+        padding: 20px;
+        font-size: large;
+        top: 90px;
+    }
+
+    header .menu-close {
+        font-size: medium;
+        padding-left: 50px;
+        padding-top: 0px;
+        margin: 0;
+    }
+
+    header ul.show {
+        display: block;
+        transition: all .3s;
+        background: rgb(2, 2, 227);
+        padding-top: 30px;
+    }
+
+    #welcome-user {
+        float: left;
+    }
+
+    .footer .footer-content {
+        flex-direction: column;
+        font-size: .7em;
+        padding: 0px;
+        margin-bottom: 0;
+        height: 100%;
+    }
+
+    .footer .footer-content .contact-form {
+        padding: 10px ;
+        height: 100%;
+    }
+
+    .footer-bottom {
+        font-size: .7em;
+        position:inherit;
+        top: 80px
+    }
+}
+
+
+
+@media only screen and (min-width: 751px) and (max-width: 900px) {
+    body {
+        padding: 100px;
+        padding-top: 0px;
+    }
+    
+    .footer .footer-content {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    header ul {
+        width: 100px;
+        display: none;
+        padding-top: 40px;
+    }
+
+    header .menu-toggle {
+        display: block;
+        float: right;
+        padding: 20px;
+        font-size: large;
+    }
+
+    header .menu-close {
+        font-size: medium;
+        padding-left: 50px;
+        padding-top: 0px;
+        margin: 0;
+    }
+
+    header ul.show {
+        display: block;
+        transition: all .3s;
+        background: rgb(2, 2, 227);
+        padding-top: 30px;
+    }
+
+    .footer .footer-bottom {
+        top: 200px;
+    }
+
+    .footer .footer-content .footer-section {
+        top: 0px;
+    }
+}
+
+@media only screen and (min-width:901px) and (max-width:1836px) {
+    body {
+        padding: 100px;
+        padding-top: 0px;
+    }
+
+    .footer .footer-content {
+        height: 100%;
+       
+    }
+
+    .footer .button  {
+        height: 70%;
+        padding-top: 70%;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1836px) {
+    body {
+        padding: 100px;
+        padding-top: 0px;
+    }
+
+    .footer .footer-content {
+        height: 100%;
+    }
+
+    header .menu-toggle, .menu-close {
+        display: none;
+    }
+
+    .footer .footer-bottom {
+        top: px;
+    }
+
+    .footer .button  {
+        height: 70%;
+        padding-top: 350px;
+    }
+    
+
+    .footer .footer-content .footer-section {
+        top: 0px;
+    }
 }

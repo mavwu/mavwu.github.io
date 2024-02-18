@@ -7,73 +7,228 @@
     <meta name="description" content="Welcome to Alfred Mavwu's portfolio site. 
                                     I am a Computer Science Student at Mulungushi University based in Zambia.">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Candal|Lora">
+    <script src="https://kit.fontawesome.com/09e2129185.js" crossorigin="anonymous"></script>
+
     <title>Alfred Mavwu Portfolio site</title>
+    <style>
+         body {
+            padding-top: 0px;
+            background: #ccc;
+            border: grey;
+            text-align: center;
+        }
+
+        .page-wrapper {
+            padding: 15px;
+            border: 1px rgb(170, 168, 168) solid;
+        }
+
+        aside button {
+            background: blue;
+            border: white 1px solid;
+            border: none;
+            border-radius: 10px;
+            width: 40%;
+
+        }
+
+        aside button a {
+            text-decoration: none;
+            color: white;
+            transition: all .8s;
+            text-align: center;
+            padding: 20px;
+        }
+
+        aside button:hover {
+            background: rgb(88, 88, 222);
+            transition: all .8s;
+            width: 50%;
+        }
+
+        .button-to-top a {
+            padding: 0px;
+        }
+    </style>
     <script src="script.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Welcome to Alfred's Portfolio!</h1>
-        <p id="welcomeText">A Web Developer from Zambia </p>
+        <div class="site-heading-container">
+            <h1 id="top" class="site-heading">Welcome to Alfred's Portfolio</h1>
+        </div>
+
+        <i class="fa fa-bars menu-toggle" id="toggle"></i>
+
+
+        <ul class="nav" id="navMenu">
+            <i class="fa fa-x menu-close" id="close"></i>
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact Us</a></li>
+            
+           
+            </li>
+        </ul>
     </header>
 
-    <nav>
-        <div id="links">
-            <a href="#home">Home</a>
-            <a href="#aboutMe">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contactInfo">Contacts</a>
-            <a href="#socials">Socials</a>
-        </div>
-    </nav>
-
-    <section id="aboutMe">
-        <h2>Personal Information</h2>
-        <img src="profilepic.jpg" alt="Profile Picture of Alfred Mavwu">
-        <ul>
-            <li><strong>Name:</strong> Alfred Mavwu</li>
-            <li><strong>Age:</strong> 21 years old</li>
-            <li><strong>Location:</strong> Livingstone, Zambia</li>
-        </ul>
-        <h3>About Me</h3>
-        <p>I am Zambian male currently pursing a Bachelor's degree in Computer Science
-            at Mulungushi University in Zambia.
-            I am passionate about building websites and apps, creating content and coding.
-            I love turning ideas into innovative solutions. </p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <article>
-            <h3>Simple Blog Site</h3>
-            <p>A simple blog site created using HTML5, CSS3, and JavaScript.</p>
-        </article>
-        <aside>
-            <button><a href="https://mavwublog.onrender.com/">View Project</a></button>
-        </aside>
-        <div id="blogDisplay"></div>
-
-    </section>
-
-    <section id="contactInfo">
-        <h2>Contact Details</h2>
-        <h3>Personal</h3>
-        <p>You can contact me through the following means:</p>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:viwaplayz@gmail.com">Email me</a></li>
-            <li><strong>Phone:</strong> Call on +260972073035 </li>
-        </ul>
-        <h3 id="socials">Socials</h3>
-        <nav>
+    <div class="page-wrapper">
+        <section id="aboutMe">
+            <h2>Personal Information</h2>
+            <img src="profilepic.jpg" alt="Profile Picture of Alfred Mavwu">
             <ul>
-                <a href="https://www.youtube.com/channel/UCNhvoZM5qWOfftpSHBkB3cA" target="_blank">Youtube Channel</a>
-                <a href=https://www.youtube.com/channel/UCtt9FY-EyCJyw8B3UkpYr_Q" target="_blank">Gaming Channel</a>
-        </nav>
-    </section>
+                <li><strong>Name:</strong> Alfred Mavwu</li>
+                <li><strong>Age:</strong> 21 years old</li>
+                <li><strong>Location:</strong> Livingstone, Zambia</li>
+            </ul>
+            <h3>About Me</h3>
+            <p>I am Zambian male currently pursing a Bachelor's degree in Computer Science
+                at Mulungushi University in Zambia.
+                I am passionate about building websites and apps, creating content and coding.
+                I love turning ideas into innovative solutions. </p>
+        </section>
+    
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>Simple Blog Site</h3>
+                <p>A simple blog site created using HTML5, CSS3, and JavaScript.</p>
+            </article>
+            <aside>
+                <button><a href="https://mavwublog.onrender.com/">View Project</a></button>
+            </aside>
+            <div id="blogDisplay"></div>
+    
+        </section>
+
+    </div>
     <footer>
-        <p>&copy; 2024 Alfred Mavwu. All rights reserved. </p>
+           <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text"><span>A.</span>Mavwu</h1>
+                <p>Welcome to our vibrant community of bloggers!
+                    We're thrilled to have you on board.
+                    Your journey into the world of expression and creativity begins now.
+                </p>
+
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &nbsp; +260 972073035 </span><br>
+                    <span><i class="fas fa-envelope"></i> &nbsp; viwaplayz@gmail.com </span> <br>
+                </div>
+
+                <div class="socials">
+                    <hr>
+                    <a href="https://web.facebook.com/profile.php?id=61556678093170"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@WanguCS"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@mavwu"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/+260972073035"><i class="fab fa-whatsapp"></i></a>                
+                </div>
+            </div>
+            <div class="footer-section links">
+
+
+                <div class="button">
+                    <button class="button-to-top" id="top">
+                        <a style="text-decoration: none; color: white" href="#top">Back to Top</a>
+                    </button>
+                </div>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-form" id="contacts">
+                <h2>Contact Us</h2>
+                <br>
+                <textarea name="" id="userMessage" class="text-input contact-input"
+                    placeholder="Enter your message...."></textarea>
+                <button id="sendEmailButton" class="submit btn btn-big">
+                    <i class="fas fa-envelope"></i>
+                    Send
+                </button>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Mavwu | Designed by Alfred Mavwu
+        </div>
+
+    </div>
+
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Extract the username from the URL
+            const params = new URLSearchParams(window.location.search);
+            const username = params.get('username');
+
+            // Update the placeholder with the username
+            if (username) {
+                document.getElementById('welcome-user').innerText = `Welcome, ${username}!`;
+            }
+        });
+
+        // to contact me
+        document.getElementById('sendEmailButton').addEventListener('click', function () {
+            const me = 'viwaplayz@gmail.com'
+            const userMessage = document.getElementById('userMessage').value;
+
+            if (userMessage) {
+                const subject = 'Feedback'
+                const body = encodeURIComponent(userMessage);
+
+                const mailToLink = `mailto:${me}?subject=${subject}&body=${body}`;
+                window.location.href = mailToLink;
+            }
+            else {
+                alert('Email not sent. Please enter a message');
+            }
+        });
+
+        // smooth scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToTopButton = document.getElementById('top');
+
+            if (backToTopButton) {
+                backToTopButton.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+
+        // show nav menu on small devices
+        document.addEventListener('DOMContentLoaded', () => {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.getElementById('toggle');
+            const closeMenu = document.getElementById('close');
+
+            menuToggle.addEventListener('click', () => {
+                console.log("menu toggle clicked");
+                navMenu.classList.toggle('show');
+
+                // then hide menu button and show close button
+                menuToggle.style.display = "none";
+                closeMenu.style.display = "block";
+            });
+
+            closeMenu.addEventListener('click', () => {
+                console.log("close menu clicked");
+                navMenu.classList.remove('show');
+
+                // then hide close button and show menu button
+                menuToggle.style.display = 'inline-block';
+                closeMenu.style.display = 'none';
+            });
+        });
+
+    </script>
 </body>
 
 </html>
