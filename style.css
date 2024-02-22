@@ -61,7 +61,7 @@ html, body {
 
 header {
     background: blue;
-    height: 66px;
+    height: 73px;
     width: 100%;
 }
 
@@ -146,11 +146,13 @@ header .menu-close {
 header .menu-toggle:hover {
     color: rgb(34, 39, 108);
     transition: all .3s;
+    cursor: pointer;
 }
 
 header .menu-close:hover {
     color: rgb(34, 39, 108);
     transition: all .3s;
+    cursor: pointer;
 }
 
 header * {
@@ -159,8 +161,8 @@ header * {
 
 .drop-icon {
     font-size: .8em;
-    
 }
+
 
 /* WRAPPPERR */
 .page-wrapper {

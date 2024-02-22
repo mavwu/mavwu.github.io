@@ -19,6 +19,13 @@
             text-align: center;
         }
 
+        #profilepic {
+            width: 20%;
+            border-radius: 50%;
+            border: blue 2px solid;
+    
+        }
+
         .page-wrapper {
             padding: 15px;
             border: 1px rgb(170, 168, 168) solid;
@@ -27,18 +34,10 @@
         aside button {
             background: blue;
             border: white 1px solid;
-            border: none;
             border-radius: 10px;
             width: 40%;
-
-        }
-
-        aside button a {
-            text-decoration: none;
-            color: white;
             transition: all .8s;
-            text-align: center;
-            padding: 20px;
+
         }
 
         aside button:hover {
@@ -47,9 +46,24 @@
             width: 50%;
         }
 
+        aside button a {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
         .button-to-top a {
             padding: 0px;
         }
+
+        section h2 {
+            background: blue;
+            border-radius: 10px;
+            border: white 2px solid;
+            width: 100%;
+        }
+
     </style>
     <script src="script.js"></script>
 </head>
@@ -79,7 +93,7 @@
     <div class="page-wrapper">
         <section id="aboutMe">
             <h2>Personal Information</h2>
-            <img src="profilepic.jpg" alt="Profile Picture of Alfred Mavwu">
+            <img id="profilepic" src="profilepic.jpg" alt="Profile Picture of Alfred Mavwu">
             <ul>
                 <li><strong>Name:</strong> Alfred Mavwu</li>
                 <li><strong>Age:</strong> 21 years old</li>
@@ -110,7 +124,7 @@
            <div class="footer">
         <div class="footer-content">
             <div class="footer-section about">
-                <h1 class="logo-text"><span>A.</span>Mavwu</h1>
+                <h1 class="logo-text">Mavwu</h1>
                 <p>Welcome to our vibrant community of bloggers!
                     We're thrilled to have you on board.
                     Your journey into the world of expression and creativity begins now.
