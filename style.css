@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: #c8c8c8b2;
+    
     font-family: 'Arial', sans-serif;
     color: #333;
 }
@@ -53,8 +53,7 @@ section {
 html, body {
     height: 100%;
     padding: 0;
-    margin: 0;
-    background: silver;
+    margin: 0;;
     font-family: Lora, serif;
     scroll-behavior: smooth;
 }
@@ -217,9 +216,6 @@ button a {
     position: relative;
 }
 
-.footer .logo-text {
-    font-family: Candal, serif;
-}
 
 .footer .footer-content {
     height: 400px;

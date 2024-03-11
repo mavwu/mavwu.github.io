@@ -14,7 +14,6 @@
     <style>
          body {
             padding-top: 0px;
-            background: #ccc;
             border: grey;
             text-align: center;
         }
@@ -22,13 +21,14 @@
         #profilepic {
             width: 20%;
             border-radius: 50%;
-            border: blue 2px solid;
+            border: white 2px solid;
     
         }
 
         .page-wrapper {
             padding: 15px;
             border: 1px rgb(170, 168, 168) solid;
+            color: white;
         }
 
         aside button {
@@ -65,11 +65,19 @@
             width: 100%;
         }
 
+        progress {
+            width: 70%;
+            height: 20px;
+            border-radius: 30px;
+            border: none;
+            border: 2px white solid;
+        }
+
     </style>
     <script src="script.js"></script>
 </head>
 
-<body>
+<body background="/images/background.jpg">
     <header>
         <div class="site-heading-container">
             <h1 id="top" class="site-heading">Portfolio</h1>
@@ -94,7 +102,7 @@
     <div class="page-wrapper">
         <section id="aboutMe">
             <h2>Personal Information</h2>
-            <img id="profilepic" src="profilepic.jpg" alt="Profile Picture of Alfred Mavwu">
+            <img id="profilepic" src="/images/profilepic.jpg" alt="Profile Picture of Alfred Mavwu">
             <ul>
                 <li><strong>Name:</strong> Alfred Mavwu</li>
                 <li><strong>Age:</strong> 21 years old</li>
@@ -120,15 +128,34 @@
     
         </section>
 
+        <section id="Skills">
+            <h2>My Skills</h2>
+            <ul id="skillList">
+                <li>HTML</li>
+                <progress value="100" max="100">100%</progress>
+                <li>CSS</li>
+                <progress value="60" max="100">60%</progress>
+                <li>JavaScript</li>
+                <progress value="40" max="100">40%</progress>
+                <li>Java</li>
+                <progress value="74" max="100">70%</progress>
+                <li>Python</li>
+                <progress value="50" max="100">50%</progress>
+                <li>SQL</li>
+                <progress value="60" max="100">60%</progress>
+                <li></li>
+                
+            </ul>
+
+        </section>
+
     </div>
     <footer>
            <div class="footer">
         <div class="footer-content">
             <div class="footer-section about">
-                <h1 class="logo-text">Mavwu</h1>
-                <p>Welcome to our vibrant community of bloggers!
-                    We're thrilled to have you on board.
-                    Your journey into the world of expression and creativity begins now.
+                <h2>Contact Information</h1>
+                <p>
                 </p>
 
                 <div class="contact">
@@ -145,7 +172,8 @@
                 </div>
             </div>
             <div class="footer-section links">
-
+                <h2>Download CV</h2>
+                <p>TBA</p>
 
                 <div class="button">
                     <button class="button-to-top" id="top">
@@ -156,7 +184,7 @@
             </div>
 
             <div class="footer-section contact-form" id="contacts">
-                <h2>Contact Us</h2>
+                <h2>Feedback</h2>
                 <br>
                 <textarea name="" id="userMessage" class="text-input contact-input"
                     placeholder="Enter your message...."></textarea>
