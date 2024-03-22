@@ -348,6 +348,15 @@ button a {
 
 
 /* media queries */
+@media only screen and (max-width: 350px) {
+    .footer {
+        height: 100%;
+    }
+    .footer .footer-bottom {
+        top: 0px;
+    }
+}
+
 @media only screen and (max-width: 750px) {
 
     header {
@@ -401,7 +410,7 @@ button a {
     .footer-bottom {
         font-size: .7em;
         position:inherit;
-        top: 80px
+        top: 105px
     }
 }
 
@@ -446,7 +455,7 @@ button a {
     }
 
     .footer .footer-bottom {
-        top: 200px;
+        top: 250px;
     }
 
     .footer .footer-content .footer-section {
