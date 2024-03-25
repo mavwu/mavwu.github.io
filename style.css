@@ -166,6 +166,7 @@ header * {
 /* WRAPPPERR */
 .page-wrapper {
     min-height: 100%;
+    margin-bottom: -50px;
 }
 
 .page-wrapper .buttons {
@@ -348,12 +349,14 @@ button a {
 
 
 /* media queries */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    /* Your styles for iPhone 7 in portrait mode */
+@media only screen and (max-width: 300px) {
+    .footer {
+        height: 100%;
+    }
+
+    .footer .footer-bottom {
+        top: 0px;
+    }
 }
 
 @media only screen and (max-width: 350px) {
