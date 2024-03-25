@@ -348,6 +348,14 @@ button a {
 
 
 /* media queries */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    /* Your styles for iPhone 7 in portrait mode */
+}
+
 @media only screen and (max-width: 350px) {
     .footer {
         height: 100%;
