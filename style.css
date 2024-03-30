@@ -209,10 +209,13 @@ button a {
 
 
 /* Footer *************************/
+
+
 .footer {
     color: white;
     background: blue;
-    height: 500px;
+    top: 40px;
+    height: 100%;
     width: 100%;
     position: relative;
     bottom: 0;
@@ -228,8 +231,7 @@ button a {
 
 .footer .footer-content .footer-section {
     flex: 1;
-    padding: 25px;
-    background: blue;
+    padding: 20px;
     width: 100%; 
     border: 1px solid white;
 }
@@ -245,12 +247,13 @@ button a {
 
 .footer .footer-bottom {
     background: rgb(6, 6, 201);
-    height: 50px;
+    height: ;
     width: 100%;
     text-align: center;
     position: relative;
     bottom: 0;
     left: 0;
+    top: 0;
     padding-top: 20px;
     border: 1px solid white;
     
@@ -406,6 +409,10 @@ button a {
         float: left;
     }
 
+    .footer {
+        height: 100%;
+    }
+
     .footer .footer-content {
         flex-direction: column;
         font-size: .7em;
@@ -429,6 +436,10 @@ button a {
 
 
 @media only screen and (min-width: 751px) and (max-width: 900px) {
+    .footer {
+        height: 100%;
+    }
+
     body {
         padding: 100px;
         padding-top: 0px;
@@ -467,7 +478,7 @@ button a {
     }
 
     .footer .footer-bottom {
-        top: 250px;
+        top: 0px;
     }
 
     .footer .footer-content .footer-section {
