@@ -105,6 +105,10 @@ header ul li:hover ul {
     display: block;
 }
 
+header ul li a:hover {
+    color: black;
+}
+
 header ul li ul li {
     width: 100%;
 }
@@ -274,13 +278,12 @@ button a {
     margin-right: 5px;
     text-align: center;
     display: inline-block;
-    font-size: 1.3em;
-    border-radius: 5px;
+    font-size: 1.9em;
+    border: none;
     transition: all .3s;
 }
 
 .footer .footer-content .about .socials a:hover {
-    border: 1px solid white;
     color: black;
     transition: all .3s;
 }
