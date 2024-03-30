@@ -133,10 +133,7 @@ header ul li a {
     text-decoration: none;
 }
 
-header ul li a:hover {
-    background: rgb(2, 2, 204);
-    transition: 0.5s;
-}
+
 
 header .menu-toggle {
     display: none;
@@ -166,6 +163,9 @@ header * {
     font-size: .8em;
 }
 
+.navMenu {
+    
+}
 
 /* WRAPPPERR */
 .page-wrapper {
@@ -384,6 +384,7 @@ button a {
     header ul {
         width: 100px;
         display: none;
+        
     }
 
     header .menu-toggle {
