@@ -163,10 +163,6 @@ header * {
     font-size: .8em;
 }
 
-.navMenu {
-    
-}
-
 /* WRAPPPERR */
 .page-wrapper {
     min-height: 100%;
@@ -251,7 +247,6 @@ button a {
 
 .footer .footer-bottom {
     background: rgb(6, 6, 201);
-    height: ;
     width: 100%;
     text-align: center;
     position: relative;
