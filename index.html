@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="Welcome to Alfred Mavwu's portfolio site. 
-                                    I am a Computer Science Student at Mulungushi University based in Zambia.">
+                                    Computer Science student skilledin Python, Java, JavaScript, HTML, CSS, and SQL.
+                                    Passionate about building websites and applications, solving problems through coding, and creating innovative solutions.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Candal|Lora">
     <script src="https://kit.fontawesome.com/09e2129185.js" crossorigin="anonymous"></script>
 
     <link rel="icon" type="image/png" href="/images/icon16.png">
 
-    <title>Alfred Mavwu Portfolio site</title>
+    <title>Alfred Mavwu | Portfolio</title>
     <style>
         body {
             padding-top: 0px;
@@ -31,6 +33,19 @@
             padding: 15px;
             border: 1px rgb(170, 168, 168) solid;
             color: white;
+        }
+
+        section article {
+            border: white 2px solid;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 10px;
+            background-color: rgb(17, 17, 94);
+        }
+
+        section article:hover {
+            background-color: rgb(34, 34, 156);
+            transition: all .8s;
         }
 
         aside button {
@@ -113,33 +128,49 @@
 
     <div class="page-wrapper">
         <section id="aboutMe">
-            <h2>Personal Information</h2>
-            <img id="profilepic" src="/images/profilepic.jpg" alt="Profile Picture of Alfred Mavwu">
             <h2>About Me</h2>
-            <p>I am a Computer Science student at Mulungushi University, Zambia. I am passionate about building websites and applications, solving problems through coding, and creating innovative solutions.
-        I enjoy learning new technologies, exploring software development, and applying my skills to real-world projects. 
-        My experience includes Python, Java, JavaScript, HTML, CSS, and SQL, and I love turning ideas into functional, creative, and efficient applications. </p>
+            <p>I am a Computer Science student at Mulungushi University, Zambia. I am passionate about building websites
+                and applications, solving problems through coding, and creating innovative solutions.
+                I enjoy learning new technologies, exploring software development, and applying my skills to real-world
+                projects.
+                My experience includes Python, Java, JavaScript, HTML, CSS, and SQL, and I love turning ideas into
+                functional, creative, and efficient applications. </p>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
             <article>
                 <h3>Climate Smart Agriculture Mobile App</h3>
-                <p></p>
-
+                <p>Built with Flutter, OpenWeather API, Firebase and Machine learning models. It provides weather
+                    forecasting and crop recommendations. Applied data cleaning, visualization and predictive modeling
+                    for agricultural decision making. </p>
+            </article>
+            <article>
                 <h3>Blogging Platform</h3>
-                <p>A simple blog site created using HTML5, CSS3, and JavaScript.</p>
+                <p>Developed using HTML, CSS, Javascript, Node.js, Express.js and SQLite. Implemented features for
+                    creating, editing and storing blog posts with a full-stack design. </p>
                 <aside>
-                <button><a href="https://mavwublog.onrender.com/">View Project</a></button>
-            </aside>
-
-                <h3>Retail Management System</h3>
-                <p></p>
-
+                    <button><a href="https://mavwublog.onrender.com/">View Project</a></button>
+                </aside>
+            </article>
+            <article>
                 <h3>Portfolio Website</h3>
+                <p>Built with HTML, CSS, JavaScript to showcase personal projects and skills. Focused on responsive
+                    design and clean UI.</p>
+                <aside>
+                    <button><a href="#">View Project</a></button>
+                </aside>
+            </article>
+            <article>
+                <h3>Retail Management System</h3>
+                <p>Built with HTML, CSS, JavaScript, Node.js, Express.js, and SQLite. Implemented inventory, sales
+                    tracking, and user management features for retail businesses. </p>
+            </article>
+            <article>
+                <h3>Student Management System</h3>
 
             </article>
-            
+
             <div id="blogDisplay"></div>
 
         </section>
