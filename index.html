@@ -17,310 +17,116 @@
     <link rel="icon" type="image/png" href="/images/icon16.png">
 
     <title>Alfred Mavwu | Portfolio</title>
-    <style>
-        body {
-            padding-top: 0px;
-            border: grey;
-            text-align: center;
-        }
-
-        #profilepic {
-            width: 20%;
-            border-radius: 50%;
-            border: white 2px solid;
-
-        }
-
-        .page-wrapper {
-            padding: 15px;
-            border: 1px rgb(170, 168, 168) solid;
-            color: white;
-        }
-
-        section article {
-            border: white 2px solid;
-            border-radius: 10px;
-            margin: 20px;
-            padding: 10px;
-            background-color: rgb(17, 17, 94);
-        }
-
-        section article:hover {
-            background-color: rgb(34, 34, 156);
-            transition: all .8s;
-        }
-
-        aside button {
-            background: blue;
-            border: white 1px solid;
-            border-radius: 10px;
-            width: 40%;
-            transition: all .8s;
-
-        }
-
-        aside button:hover {
-            background: rgb(88, 88, 222);
-            transition: all .8s;
-            width: 50%;
-        }
-
-        aside button a {
-            text-decoration: none;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .button-to-top a {
-            padding: 0px;
-        }
-
-        section h2 {
-            background: blue;
-            border-radius: 10px;
-            color: white;
-            border: white 2px solid;
-            width: 100%;
-        }
-
-        progress {
-            width: 70%;
-            height: 20px;
-            border-radius: 30px;
-            border: none;
-            border: 2px white solid;
-        }
-
-        #cv a {
-            width: 100%;
-            color: white;
-            font-size: 20px;
-            text-decoration: none;
-        }
-
-        #cv a:hover {
-            color: rgb(150, 143, 143);
-        }
-    </style>
+    
     <script src="script.js"></script>
 </head>
 
-<body background="/images/background.jpg">
-    <header>
-        <div class="site-heading-container">
-            <h1 id="top" class="site-heading">Alfred Mavwu - Portfolio</h1>
-        </div>
-
-        <i class="fa fa-bars menu-toggle" id="toggle"></i>
-
-
-        <ul class="nav" id="navMenu">
-            <i class="fa fa-x menu-close" id="close"></i>
-
-            <li><a href="#home">Home</a></li>
-            <li><a href="#aboutMe">About Me</a></li>
+<body>
+     <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">Mavwu</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contact Us</a></li>
-
-
-            </li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </header>
+    </nav>
 
-    <div class="page-wrapper">
-        <section id="aboutMe">
-            <p>A Computer Scientist passionate about building websites
-                and applications, solving problems through coding, and creating innovative solutions.
-                I enjoy learning new technologies, exploring software development, and applying my skills to real-world
-                projects.
-                My experience includes Python, Java, JavaScript, HTML, CSS, and SQL, and I love turning ideas into
-                functional, creative, and efficient applications. </p>
-        </section>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <img src="/images/me.png" class="profile-pic" alt="Profile" />
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                A passionate Computer Scientist who enjoys building websites, mobile apps, 
+                and solving real-world problems through code. Skilled in Python, Java, 
+                JavaScript, Flutter, SQL, and Web Development. I love turning ideas into 
+                functional, user-friendly solutions.
+            </p>
+        </div>
+    </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <article>
-                <h3>Climate Smart Agriculture Mobile App</h3>
-                <p>Built with Flutter, OpenWeather API, Firebase and Machine learning models. It provides weather
-                    forecasting and crop recommendations. Applied data cleaning, visualization and predictive modeling
-                    for agricultural decision making. </p>
-            </article>
-            <article>
-                <h3>Blogging Platform</h3>
-                <p>Developed using HTML, CSS, Javascript, Node.js, Express.js and SQLite. Implemented features for
-                    creating, editing and storing blog posts with a full-stack design. </p>
-                <aside>
-                    <button><a href="https://mavwublog.onrender.com/">View Project</a></button>
-                </aside>
-            </article>
-            <article>
-                <h3>Portfolio Website</h3>
-                <p>Built with HTML, CSS, JavaScript to showcase personal projects and skills. Focused on responsive
-                    design and clean UI.</p>
-                <aside>
-                    <button><a href="#">View Project</a></button>
-                </aside>
-            </article>
-            <article>
-                <h3>Retail Management System</h3>
-                <p>Built with HTML, CSS, JavaScript, Node.js, Express.js, and SQLite. Implemented inventory, sales
-                    tracking, and user management features for retail businesses. </p>
-            </article>
-            <article>
-                <h3>Student Management System</h3>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
 
-            </article>
+        <div class="project-grid">
 
-            <div id="blogDisplay"></div>
-
-        </section>
-
-        <section id="Skills">
-            <h2>My Skills</h2>
-            <ul id="skillList">
-                <li>HTML</li>
-                <progress value="100" max="100">100%</progress>
-                <li>CSS</li>
-                <progress value="60" max="100">60%</progress>
-                <li>JavaScript</li>
-                <progress value="40" max="100">40%</progress>
-                <li>Java</li>
-                <progress value="74" max="100">70%</progress>
-                <li>Python</li>
-                <progress value="50" max="100">50%</progress>
-                <li>SQL</li>
-                <progress value="60" max="100">60%</progress>
-                <li></li>
-
-            </ul>
-
-        </section>
-
-    </div>
-    <footer>
-        <div class="footer">
-            <div class="footer-content">
-                <div class="footer-section about">
-                    <h2>Contact Information</h1>
-                        <p>
-                        </p>
-
-                        <div class="contact">
-                            <span><i class="fas fa-phone"></i> &nbsp; +260 972073035 </span><br>
-                            <span><i class="fas fa-envelope"></i> &nbsp; viwaplayz@gmail.com </span> <br>
-                        </div>
-
-                        <div class="socials">
-                            <hr>
-                            <a href="https://web.facebook.com/profile.php?id=61556678093170"><i
-                                    class="fab fa-facebook"></i></a>
-                            <a href="https://www.youtube.com/@WanguCS"><i class="fab fa-youtube"></i></a>
-                            <a href="https://www.tiktok.com/@mavwu"><i class="fab fa-tiktok"></i></a>
-                            <a href="https://wa.me/+260972073035"><i class="fab fa-whatsapp"></i></a>
-                        </div>
-                </div>
-                <div class="footer-section links">
-                    <h2>Download CV</h2>
-                    <p id="cv"><a href="/cv.pdf">Click here to download</a></p>
-
-                    <div class="button">
-                        <button class="button-to-top" id="top">
-                            <a style="text-decoration: none; color: white" href="#top">Back to Top</a>
-                        </button>
-                    </div>
-                    </ul>
-                </div>
-
-                <div class="footer-section contact-form" id="contacts">
-                    <h2>Feedback</h2>
-                    <br>
-                    <textarea name="" id="userMessage" class="text-input contact-input"
-                        placeholder="Enter your message...."></textarea>
-                    <button id="sendEmailButton" class="submit btn btn-big">
-                        <i class="fas fa-envelope"></i>
-                        Send
-                    </button>
-                </div>
-
+            <div class="project-card">
+                <h3>Climate Smart Agriculture App</h3>
+                <p>Flutter app using weather forecasting & ML recommendations for farmers.</p>
             </div>
-            <div class="footer-bottom">
-                &copy; 2025 Mavwu | Designed by Alfred Mavwu
+
+            <div class="project-card">
+                <h3>Blogging Platform</h3>
+                <p>Full-stack blog using Node.js, Express, and SQLite.</p>
+                <a href="https://mavwublog.onrender.com/" class="project-btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>My personal portfolio created with clean HTML, CSS and JavaScript.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Retail Management System</h3>
+                <p>Inventory and sales tracking system using Node.js and SQLite.</p>
             </div>
 
         </div>
+    </section>
 
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+
+        <div class="skill">
+            <span>HTML</span>
+            <div class="bar"><div class="fill" style="--fill-width: 100%"></div></div>
+        </div>
+
+        <div class="skill">
+            <span>CSS</span>
+            <div class="bar"><div class="fill" style="--fill-width: 70%"></div></div>
+        </div>
+
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="bar"><div class="fill" style="--fill-width: 50%"></div></div>
+        </div>
+
+        <div class="skill">
+            <span>Java</span>
+            <div class="bar">
+                <div class="fill" style="--fill-width: 75%"></div></div>
+        </div>
+
+        <div class="skill">
+            <span>Python</span>
+            <div class="bar"><div class="fill" style="--fill-width: 60%"></div></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p><i class="fas fa-phone"></i> +260 972073035</p>
+        <p><i class="fas fa-envelope"></i> viwaplayz@gmail.com</p>
+
+        <div class="socials">
+            <a href="https://web.facebook.com/profile.php?id=61556678093170"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@WanguCS"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@mavwu"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/+260972073035"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mavwu | Designed by Alfred Mavwu</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Extract the username from the URL
-            const params = new URLSearchParams(window.location.search);
-            const username = params.get('username');
-
-            // Update the placeholder with the username
-            if (username) {
-                document.getElementById('welcome-user').innerText = `Welcome, ${username}!`;
-            }
-        });
-
-        // to contact me
-        document.getElementById('sendEmailButton').addEventListener('click', function () {
-            const me = 'viwaplayz@gmail.com'
-            const userMessage = document.getElementById('userMessage').value;
-
-            if (userMessage) {
-                const subject = 'Feedback'
-                const body = encodeURIComponent(userMessage);
-
-                const mailToLink = `mailto:${me}?subject=${subject}&body=${body}`;
-                window.location.href = mailToLink;
-            }
-            else {
-                alert('Email not sent. Please enter a message');
-            }
-        });
-
-        // smooth scroll
-        document.addEventListener('DOMContentLoaded', () => {
-            const backToTopButton = document.getElementById('top');
-
-            if (backToTopButton) {
-                backToTopButton.addEventListener('click', () => {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                });
-            }
-        });
-
-        // show nav menu on small devices
-        document.addEventListener('DOMContentLoaded', () => {
-            const navMenu = document.getElementById('navMenu');
-            const menuToggle = document.getElementById('toggle');
-            const closeMenu = document.getElementById('close');
-
-            menuToggle.addEventListener('click', () => {
-                console.log("menu toggle clicked");
-                navMenu.classList.toggle('show');
-
-                // then hide menu button and show close button
-                menuToggle.style.display = "none";
-                closeMenu.style.display = "block";
-            });
-
-            closeMenu.addEventListener('click', () => {
-                console.log("close menu clicked");
-                navMenu.classList.remove('show');
-
-                // then hide close button and show menu button
-                menuToggle.style.display = 'inline-block';
-                closeMenu.style.display = 'none';
-            });
-        });
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
