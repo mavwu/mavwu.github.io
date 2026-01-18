@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Alfred Mavwu">
-    <meta name="keywords" content="Alfred Mavwu, Mavwu, Portfolio, Computer Science, Developer, Programmer, Software Engineer, Web Developer, Application Developer, Mulungushi Graduate, Zambia">
-    <meta name="description" content="Welcome to Alfred Mavwu's portfolio site. 
+    <meta name="keywords"
+        content="Alfred Mavwu, Mavwu, Portfolio, Computer Science, Developer, Programmer, Software Engineer, Web Developer, Application Developer, Mulungushi Graduate, Zambia">
+    <meta name="description"
+        content="Welcome to Alfred Mavwu's portfolio site. 
                                     Computer Scientist skilled in Python, Java, JavaScript, HTML, CSS, and SQL.
                                     Passionate about building websites and applications, solving problems through coding, and creating innovative solutions.">
     <link rel="stylesheet" href="style.css">
@@ -17,15 +19,14 @@
     <link rel="icon" type="image/png" href="/images/icon16.png">
 
     <title>Alfred Mavwu | Portfolio</title>
-    
+
     <script src="script.js"></script>
-    <style src="style.css"></style>
 </head>
 
 <body>
-     <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
     <nav class="navbar">
-        <div class="logo">Mavwu</div>
+        <div class="logo"><a href="/">Mavwu</a></div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -40,11 +41,21 @@
         <div class="about-text">
             <h2>About Me</h2>
             <p>
-                A passionate Computer Scientist who enjoys building websites, mobile apps, 
-                and solving real-world problems through code. Skilled in Python, Java, 
-                JavaScript, Flutter, SQL, and Web Development. I love turning ideas into 
+                A passionate Computer Scientist who enjoys building websites, mobile apps,
+                and solving real-world problems through code. Skilled in Python, Java,
+                JavaScript, Flutter, SQL, and Web Development. I love turning ideas into
                 functional, user-friendly solutions.
             </p>
+
+            <!-- CV Buttons -->
+            <div class="cv-buttons">
+                <a href="/cv/Alfred_Mavwu_CV.pdf" target="_blank" class="cv-btn primary">
+                    View CV
+                </a>
+                <a href="/cv/Alfred_Mavwu_CV.pdf" download class="cv-btn secondary">
+                    Download CV
+                </a>
+            </div>
         </div>
     </section>
 
@@ -75,17 +86,18 @@
                 <h3>Retail Management System</h3>
                 <p>Inventory and sales tracking system using Node.js and SQLite.</p>
             </div>
-            
-             <div class="project-card">
+
+            <div class="project-card">
                 <h3>Public Profile Analyzer</h3>
-                <p>Checks username availability across multiple platforms (GitHub, YouTube, TikTok, Facebook)</p> <br/>
+                <p>Checks username availability across multiple platforms (GitHub, YouTube, TikTok, Facebook)</p> <br />
                 <p><strong>Tech Stack:</strong> Flask, Python, JavaScript, HTML, CSS</p>
                 <a href="https://public-profile-analyzer.vercel.app/" class="project-btn">View Project</a>
             </div>
 
-             <div class="project-card">
+            <div class="project-card">
                 <h3>EZ Statement ZM</h3>
-                <p>A Flutter app that helps students and parents quickly access Examination Council of Zambia (ECZ) examination statements</p> <br/>
+                <p>A Flutter app that helps students and parents quickly access Examination Council of Zambia (ECZ)
+                    examination statements</p> <br />
                 <p><strong>Tech Stack:</strong> Flutter(Dart), JavaScript, </p>
                 <a href="https://ezstatementszm.vercel.app/" class="project-btn">View Project</a>
 
@@ -98,46 +110,107 @@
     <section id="skills" class="skills">
         <h2>Skills</h2>
 
-        <div class="skill">
-            <span>HTML</span>
-            <div class="bar"><div class="fill" style="--fill-width: 100%"></div></div>
-        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>IT Support</h3>
+                <div class="chips">
+                    <span>IT troubleshooting</span>
+                    <span>PC maintenance</span>
+                    <span>Software install & updates</span>
+                </div>
+            </div>
 
-        <div class="skill">
-            <span>CSS</span>
-            <div class="bar"><div class="fill" style="--fill-width: 70%"></div></div>
-        </div>
+            <div class="skill-card">
+                <h3>Microsoft 365</h3>
+                <div class="chips">
+                    <span>Word</span><span>PowerPoint</span><span>Excel</span>
+                    <span>Teams</span><span>OneDrive</span>
+                </div>
+            </div>
 
-        <div class="skill">
-            <span>JavaScript</span>
-            <div class="bar"><div class="fill" style="--fill-width: 50%"></div></div>
-        </div>
+            <div class="skill-card">
+                <h3>Operating Systems</h3>
+                <div class="chips">
+                    <span>Windows install</span>
+                    <span>Configuration</span>
+                    <span>Basic troubleshooting</span>
+                </div>
+            </div>
 
-        <div class="skill">
-            <span>Java</span>
-            <div class="bar">
-                <div class="fill" style="--fill-width: 75%"></div></div>
-        </div>
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <div class="chips">
+                    <span>Python</span><span>Java</span><span>JavaScript</span><span>Dart (Flutter)</span>
+                </div>
+            </div>
 
-        <div class="skill">
-            <span>Python</span>
-            <div class="bar"><div class="fill" style="--fill-width: 60%"></div></div>
+            <div class="skill-card">
+                <h3>Web & App Development</h3>
+                <div class="chips">
+                    <span>HTML</span><span>CSS</span><span>Flutter (Android)</span>
+                    <span>Node.js</span><span>Express.js</span><span>REST APIs</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>Databases</h3>
+                <div class="chips">
+                    <span>SQLite</span><span>Firebase</span><span>SQL (CRUD)</span><span>Queries</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>Tools & Practices</h3>
+                <div class="chips">
+                    <span>Git</span><span>API testing</span><span>Debugging</span><span>App testing</span>
+                </div>
+            </div>
         </div>
     </section>
+
+
 
     <!-- CONTACT -->
     <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p><i class="fas fa-phone"></i> +260 972073035</p>
-        <p><i class="fas fa-envelope"></i> viwaplayz@gmail.com</p>
+  <h2>Contact Me</h2>
 
-        <div class="socials">
-            <a href="https://web.facebook.com/profile.php?id=61556678093170"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.youtube.com/@WanguCS"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.tiktok.com/@mavwu"><i class="fab fa-tiktok"></i></a>
-            <a href="https://wa.me/+260972073035"><i class="fab fa-whatsapp"></i></a>
-        </div>
-    </section>
+  <div class="contact-card">
+    <p class="contact-subtitle">Let’s connect — I’m open to opportunities and collaborations.</p>
+
+    <div class="contact-items">
+      <a class="contact-item" href="tel:+260972073035">
+        <i class="fas fa-phone"></i>
+        <span>+260 972 073 035</span>
+      </a>
+
+      <a class="contact-item" href="mailto:viwaplayz@gmail.com">
+        <i class="fas fa-envelope"></i>
+        <span>viwaplayz@gmail.com</span>
+      </a>
+
+      <a class="contact-item" href="https://wa.me/260972073035" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp Me</span>
+      </a>
+    </div>
+
+    <div class="socials modern-socials">
+      <a href="https://web.facebook.com/profile.php?id=61556678093170" target="_blank" rel="noopener" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.youtube.com/@WanguCS" target="_blank" rel="noopener" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.tiktok.com/@mavwu" target="_blank" rel="noopener" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://wa.me/260972073035" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
 
     <footer>
         <p>&copy; 2026 Mavwu | Designed by Alfred Mavwu</p>
