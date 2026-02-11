@@ -481,6 +481,7 @@ body {
 
 /* Skills Section */
 .skills {
+    text-align: center;
     padding: 80px 10%;
     position: relative;
 }
