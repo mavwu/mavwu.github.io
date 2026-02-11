@@ -647,8 +647,9 @@ body {
 .modern-socials {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;        /* allows wrapping on small screens */
+  gap: 20px;              /* smaller spacing */
   margin-top: 25px;
-  gap: 80px;
 }
 
 .modern-socials a {
@@ -660,7 +661,7 @@ body {
   background: var(--blue-soft);
   color: var(--blue);
   text-decoration: none;
-  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+  transition: 0.25s ease;
   border: 1px solid var(--blue-border);
 }
 
@@ -722,5 +723,12 @@ footer {
 
   .hero-title{
     font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modern-socials a {
+    width: 36px;
+    height: 36px;
   }
 }
