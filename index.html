@@ -9,32 +9,78 @@
     <meta name="keywords"
         content="Alfred Mavwu, Mavwu, Portfolio, Computer Science, Developer, Programmer, Software Engineer, Web Developer, Application Developer, Mulungushi Graduate, Zambia">
     <meta name="description"
-        content="Welcome to Alfred Mavwu's portfolio site. 
-                                    Computer Scientist skilled in Python, Java, JavaScript, HTML, CSS, and SQL.
-                                    Passionate about building websites and applications, solving problems through coding, and creating innovative solutions.">
+        content="Welcome to Alfred Mavwu's portfolio site. Computer Scientist skilled in Python, Java, JavaScript, HTML, CSS, and SQL. Passionate about building websites and applications, solving problems through coding, and creating innovative solutions.">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Candal|Lora">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <script src="https://kit.fontawesome.com/09e2129185.js" crossorigin="anonymous"></script>
 
     <link rel="icon" type="image/png" href="/images/icon16.png">
-
     <title>Alfred Mavwu | Portfolio</title>
-
-    <script src="script.js"></script>
 </head>
 
 <body>
     <!-- NAVIGATION -->
     <nav class="navbar">
-        <div class="logo"><a href="/">Mavwu</a></div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <div class="logo"><a href="#top">Mavwu</a></div>
+
+        <!-- Hamburger -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- HERO -->
+    <section id="top" class="hero">
+        <div class="hero-inner">
+            <p class="hero-badge">Web & Mobile Developer 🇿🇲</p>
+
+            <h1 class="hero-title">
+                Clean websites & simple apps that help people and businesses get things done.
+            </h1>
+
+            <p class="hero-subtitle">
+                I build fast, mobile-friendly websites and practical applications — focused on clarity, usability, and
+                real-world results.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#projects" class="hero-btn primary">View Projects</a>
+                <a href="https://wa.me/260972073035" target="_blank" rel="noopener" class="hero-btn secondary">
+                    WhatsApp Me
+                </a>
+                <a href="/cv/Alfred_Mavwu_CV.pdf" target="_blank" class="hero-btn ghost">View CV</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <h3>Web</h3>
+                    <p>Business sites, landing pages</p>
+                </div>
+
+                <div class="hero-stat">
+                    <h3>Apps</h3>
+                    <p>Flutter MVPs & prototypes</p>
+                </div>
+
+                <div class="hero-stat">
+                    <h3>IT</h3>
+                    <p>Support & troubleshooting</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ABOUT -->
     <section id="about" class="about">
@@ -49,12 +95,8 @@
 
             <!-- CV Buttons -->
             <div class="cv-buttons">
-                <a href="/cv/Alfred_Mavwu_CV.pdf" target="_blank" class="cv-btn primary">
-                    View CV
-                </a>
-                <a href="/cv/Alfred_Mavwu_CV.pdf" download class="cv-btn secondary">
-                    Download CV
-                </a>
+                <a href="/cv/Alfred_Mavwu_CV.pdf" target="_blank" class="cv-btn primary">View CV</a>
+                <a href="/cv/Alfred_Mavwu_CV.pdf" download class="cv-btn secondary">Download CV</a>
             </div>
         </div>
     </section>
@@ -67,41 +109,78 @@
 
             <div class="project-card">
                 <h3>Climate Smart Agriculture App</h3>
-                <p>A Flutter-based mobile application providing weather insights and climate-smart guidance for farmers.</p>
+                <div class="tags">
+                    <span>Flutter</span>
+                    <span>Mobile</span>
+                    <span>Weather</span>
+                </div>
+                <p>
+                    A Flutter-based mobile application providing weather insights and climate-smart guidance for farmers.
+                </p>
             </div>
 
             <div class="project-card">
                 <h3>Blogging Platform</h3>
+                <div class="tags">
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>SQLite</span>
+                    <span>Full-Stack</span>
+                </div>
                 <p>Full-stack simple blogging platform using Node.js, Express, and SQLite.</p>
-                <a href="https://mavwublog.vercel.app" class="project-btn">View Project</a>
+                <a href="https://mavwublog.vercel.app" class="project-btn" target="_blank" rel="noopener">View Project</a>
             </div>
 
             <div class="project-card">
                 <h3>Portfolio Website</h3>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
                 <p>My personal portfolio created with clean HTML, CSS and JavaScript.</p>
-                <a href="https://mavwu.github.io" class="project-btn">View Project</a>
+                <a href="https://mavwu.github.io" class="project-btn" target="_blank" rel="noopener">View Project</a>
             </div>
 
             <div class="project-card">
                 <h3>Retail Management System (Demo)</h3>
-                <p>Inventory and sales tracking system built to explore backend logic and data handling. </p>
-                <a href="https://retail-management-system-rhf7.onrender.com" class="project-btn">View Project</a>
+                <div class="tags">
+                    <span>Node.js</span>
+                    <span>SQLite</span>
+                    <span>CRUD</span>
+                </div>
+                <p>Inventory and sales tracking system built to explore backend logic and data handling.</p>
+                <a href="https://retail-management-system-rhf7.onrender.com" class="project-btn" target="_blank"
+                    rel="noopener">View Project</a>
             </div>
 
             <div class="project-card">
                 <h3>Public Profile Analyzer</h3>
-                <p>Checks username availability across multiple platforms (GitHub, YouTube, TikTok, Facebook)</p> <br />
+                <div class="tags">
+                    <span>Flask</span>
+                    <span>Python</span>
+                    <span>Web</span>
+                </div>
+                <p>Checks username availability across multiple platforms (GitHub, YouTube, TikTok, Facebook)</p>
                 <p><strong>Tech Stack:</strong> Flask, Python, JavaScript, HTML, CSS</p>
-                <a href="https://public-profile-analyzer.vercel.app/" class="project-btn">View Project</a>
+                <a href="https://public-profile-analyzer.vercel.app/" class="project-btn" target="_blank"
+                    rel="noopener">View Project</a>
             </div>
 
             <div class="project-card">
                 <h3>EZ Statement ZM (Personal Project)</h3>
-                <p>A Flutter app that helps students and parents quickly access Examination Council of Zambia (ECZ)
-                    examination statements</p> <br />
-                <p><strong>Tech Stack:</strong> Flutter(Dart), JavaScript, </p>
-                <a href="https://ezstatementszm.vercel.app/" class="project-btn">View Project</a>
-
+                <div class="tags">
+                    <span>Flutter</span>
+                    <span>Dart</span>
+                    <span>Education</span>
+                </div>
+                <p>
+                    A Flutter app that helps students and parents quickly access Examination Council of Zambia (ECZ)
+                    examination statements
+                </p>
+                <p><strong>Tech Stack:</strong> Flutter(Dart), JavaScript</p>
+                <a href="https://ezstatementszm.vercel.app/" class="project-btn" target="_blank" rel="noopener">View
+                    Project</a>
             </div>
 
         </div>
@@ -218,8 +297,6 @@
         </div>
     </section>
 
-
-
     <!-- CONTACT -->
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
@@ -261,7 +338,6 @@
             </div>
         </div>
     </section>
-
 
     <footer>
         <p>&copy; 2026 Mavwu | Designed by Alfred Mavwu</p>
