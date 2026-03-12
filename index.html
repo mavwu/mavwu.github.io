@@ -7,13 +7,25 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Alfred Mavwu">
     <meta name="keywords"
-        content="Alfred Mavwu, Mavwu, Portfolio, Computer Science, Developer, Programmer, Software Engineer, Web Developer, Application Developer, Mulungushi Graduate, Zambia">
+        content="Alfred Mavwu, Mavwu, portfolio, web developer, mobile developer, Flutter developer, Node.js developer, Zambia">
     <meta name="description"
-        content="Welcome to Alfred Mavwu's portfolio site. Computer Scientist skilled in Python, Java, JavaScript, HTML, CSS, and SQL. Passionate about building websites and applications, solving problems through coding, and creating innovative solutions.">
+        content="Portfolio of Alfred Mavwu, a web and mobile developer building clean websites, practical apps, and useful digital tools in Zambia.">
+    <meta name="theme-color" content="#0a84ff">
+    <meta property="og:title" content="Alfred Mavwu | Web and Mobile Developer">
+    <meta property="og:description"
+        content="Clean websites, practical apps, and useful digital tools for businesses, students, and organizations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mavwu.github.io/">
+    <meta property="og:image" content="https://mavwu.github.io/images/me.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alfred Mavwu | Web and Mobile Developer">
+    <meta name="twitter:description"
+        content="Clean websites, practical apps, and useful digital tools for businesses, students, and organizations.">
+    <link rel="canonical" href="https://mavwu.github.io/">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
     <script src="https://kit.fontawesome.com/09e2129185.js" crossorigin="anonymous"></script>
 
     <link rel="icon" type="image/png" href="/images/icon16.png">
@@ -21,11 +33,9 @@
 </head>
 
 <body>
-    <!-- NAVIGATION -->
     <nav class="navbar">
         <div class="logo"><a href="#top">Mavwu</a></div>
 
-        <!-- Hamburger -->
         <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
             <span></span>
@@ -41,306 +51,505 @@
         </ul>
     </nav>
 
-    <!-- HERO -->
-    <section id="top" class="hero">
-        <div class="hero-inner">
-            <p class="hero-badge">Web & Mobile Developer 🇿🇲</p>
+    <main>
+        <section id="top" class="hero">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <p class="hero-badge">Available for freelance web and app work in Zambia</p>
 
-            <h1 class="hero-title">
-                Clean websites & simple apps that help people and businesses get things done.
-            </h1>
+                    <h1 class="hero-title">I build clean websites and simple apps that solve real problems.</h1>
 
-            <p class="hero-subtitle">
-                I build fast, mobile-friendly websites and practical applications — focused on clarity, usability, and
-                real-world results.
-            </p>
+                    <p class="hero-subtitle">
+                        I help businesses, schools, students, and growing teams launch fast, mobile-friendly digital
+                        tools that are easy to use and maintain.
+                    </p>
 
-            <div class="hero-actions">
-                <a href="#projects" class="hero-btn primary">View Projects</a>
-                <a href="https://wa.me/260972073035" target="_blank" rel="noopener" class="hero-btn secondary">
-                    WhatsApp Me
-                </a>
-                <a href="/cv/Alfred_Mavwu_CV.pdf" target="_blank" class="hero-btn ghost">View CV</a>
+                    <div class="hero-actions">
+                        <a href="#projects" class="hero-btn primary">View Projects</a>
+                        <a href="https://wa.me/260972073035" target="_blank" rel="noopener noreferrer"
+                            class="hero-btn secondary">Hire Me on WhatsApp</a>
+                        <a href="/cv/Alfred_Mavwu_CV.pdf" target="_blank" rel="noopener noreferrer"
+                            class="hero-btn ghost">View CV</a>
+                    </div>
+
+                    <div class="hero-highlights">
+                        <span><i class="fa-solid fa-bolt"></i> Fast and practical delivery</span>
+                        <span><i class="fa-solid fa-mobile-screen-button"></i> Mobile-first design</span>
+                        <span><i class="fa-solid fa-layer-group"></i> Clean and simple interfaces</span>
+                    </div>
+                </div>
+
+                <aside class="hero-panel">
+                    <p class="panel-label">What I can build</p>
+
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <h3>Business websites</h3>
+                            <p>Landing pages, portfolios, school sites, and clean brochure websites.</p>
+                        </div>
+
+                        <div class="hero-stat">
+                            <h3>Simple web apps</h3>
+                            <p>Dashboards, internal tools, forms, and CRUD systems with clear workflows.</p>
+                        </div>
+
+                        <div class="hero-stat">
+                            <h3>Flutter MVPs</h3>
+                            <p>Android prototypes and practical utility apps built for real-world use.</p>
+                        </div>
+                    </div>
+
+                    <div class="availability-card">
+                        <strong>Open to freelance projects</strong>
+                        <p>Best fit for websites, landing pages, admin tools, and lightweight mobile apps.</p>
+                    </div>
+                </aside>
             </div>
+        </section>
 
-            <div class="hero-stats">
-                <div class="hero-stat">
-                    <h3>Web</h3>
-                    <p>Business sites, landing pages</p>
-                </div>
-
-                <div class="hero-stat">
-                    <h3>Apps</h3>
-                    <p>Flutter MVPs & prototypes</p>
-                </div>
-
-                <div class="hero-stat">
-                    <h3>IT</h3>
-                    <p>Support & troubleshooting</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="about">
-        <img src="/images/me.png" class="profile-pic" alt="Profile" />
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-                I’m a Computer Science graduate who builds clean, mobile-friendly websites and simple applications that
-                solve real-world problems. I focus on practical solutions for small businesses, students, and
-                organizations — turning ideas into functional, easy-to-use software.
-            </p>
-
-            <!-- CV Buttons -->
-            <div class="cv-buttons">
-                <a href="/cv/Alfred_Mavwu_CV.pdf" target="_blank" class="cv-btn primary">View CV</a>
-                <a href="/cv/Alfred_Mavwu_CV.pdf" download class="cv-btn secondary">Download CV</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-
-        <div class="project-grid">
-
-            <div class="project-card">
-                <h3>Climate Smart Agriculture App</h3>
-                <div class="tags">
-                    <span>Flutter</span>
-                    <span>Mobile</span>
-                    <span>Weather</span>
-                </div>
+        <section class="section highlights" aria-labelledby="strengths-title">
+            <div class="section-heading">
+                <p class="eyebrow">Why work with me</p>
+                <h2 id="strengths-title">Built for clarity, speed, and trust.</h2>
                 <p>
-                    A Flutter-based mobile application providing weather insights and climate-smart guidance for farmers.
+                    I focus on useful products that look professional, load fast, and stay easy to manage after launch.
                 </p>
             </div>
 
-            <div class="project-card">
-                <h3>Blogging Platform</h3>
-                <div class="tags">
-                    <span>Node.js</span>
-                    <span>Express</span>
-                    <span>SQLite</span>
-                    <span>Full-Stack</span>
-                </div>
-                <p>Full-stack simple blogging platform using Node.js, Express, and SQLite.</p>
-                <a href="https://mavwublog.vercel.app" class="project-btn" target="_blank" rel="noopener">View Project</a>
+            <div class="highlights-grid">
+                <article class="highlight-card">
+                    <div class="highlight-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>Mobile first</h3>
+                    <p>Your site should work well on the phones people already use every day.</p>
+                </article>
+
+                <article class="highlight-card">
+                    <div class="highlight-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                    <h3>Practical solutions</h3>
+                    <p>I build what is useful now, without adding complexity that slows you down.</p>
+                </article>
+
+                <article class="highlight-card">
+                    <div class="highlight-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h3>Clear communication</h3>
+                    <p>Simple updates, clear next steps, and a focus on getting the job done well.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="about-media">
+                <img src="/images/me.png" class="profile-pic" alt="Portrait of Alfred Mavwu">
             </div>
 
-            <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <div class="tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <p>My personal portfolio created with clean HTML, CSS and JavaScript.</p>
-                <a href="https://mavwu.github.io" class="project-btn" target="_blank" rel="noopener">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Retail Management System (Demo)</h3>
-                <div class="tags">
-                    <span>Node.js</span>
-                    <span>SQLite</span>
-                    <span>CRUD</span>
-                </div>
-                <p>Inventory and sales tracking system built to explore backend logic and data handling.</p>
-                <a href="https://retail-management-system-rhf7.onrender.com" class="project-btn" target="_blank"
-                    rel="noopener">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Public Profile Analyzer</h3>
-                <div class="tags">
-                    <span>Flask</span>
-                    <span>Python</span>
-                    <span>Web</span>
-                </div>
-                <p>Checks username availability across multiple platforms (GitHub, YouTube, TikTok, Facebook)</p>
-                <p><strong>Tech Stack:</strong> Flask, Python, JavaScript, HTML, CSS</p>
-                <a href="https://public-profile-analyzer.vercel.app/" class="project-btn" target="_blank"
-                    rel="noopener">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <h3>EZ Statement ZM (Personal Project)</h3>
-                <div class="tags">
-                    <span>Flutter</span>
-                    <span>Dart</span>
-                    <span>Education</span>
-                </div>
+            <div class="about-text">
+                <p class="eyebrow">About Me</p>
+                <h2>Practical software for real people.</h2>
                 <p>
-                    A Flutter app that helps students and parents quickly access Examination Council of Zambia (ECZ)
-                    examination statements
+                    I am Alfred Mavwu, a Computer Science graduate focused on building useful digital products for
+                    businesses, students, and organizations. I enjoy turning ideas into clean websites and simple
+                    applications that solve real problems.
                 </p>
-                <p><strong>Tech Stack:</strong> Flutter(Dart), JavaScript</p>
-                <a href="https://ezstatementszm.vercel.app/" class="project-btn" target="_blank" rel="noopener">View
-                    Project</a>
+
+                <div class="about-points">
+                    <div class="about-point">
+                        <strong>Focus</strong>
+                        <span>Useful websites, simple apps, and support that people can actually use.</span>
+                    </div>
+
+                    <div class="about-point">
+                        <strong>Strengths</strong>
+                        <span>Frontend polish, practical backend logic, responsive layouts, and clean delivery.</span>
+                    </div>
+
+                    <div class="about-point">
+                        <strong>Best fit</strong>
+                        <span>Portfolios, business sites, admin tools, education tools, and MVP builds.</span>
+                    </div>
+                </div>
+
+                <div class="cv-buttons">
+                    <a href="/cv/Alfred_Mavwu_CV.pdf" target="_blank" rel="noopener noreferrer"
+                        class="cv-btn primary">View CV</a>
+                    <a href="/cv/Alfred_Mavwu_CV.pdf" download class="cv-btn secondary">Download CV</a>
+                </div>
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" class="services">
-        <h2>Services</h2>
-
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Website Development</h3>
+        <section id="projects" class="section projects">
+            <div class="section-heading">
+                <p class="eyebrow">Featured Work</p>
+                <h2>Projects that show how I solve problems.</h2>
                 <p>
-                    Mobile-friendly websites for businesses, schools, churches, apartments,
-                    and personal brands — focused on clarity, speed, and usability.
+                    From mobile tools to web platforms, the goal stays the same: simple, practical, and reliable.
                 </p>
             </div>
 
-            <div class="service-card">
-                <h3>Web Applications</h3>
+            <div class="featured-grid">
+                <article class="featured-card">
+                    <div class="project-visual climate">
+                        <span>Weather + farming guidance</span>
+                    </div>
+
+                    <div class="featured-body">
+                        <h3>Climate Smart Agriculture App</h3>
+                        <div class="tags">
+                            <span>Flutter</span>
+                            <span>Mobile</span>
+                            <span>Weather</span>
+                        </div>
+                        <p>
+                            A mobile concept focused on helping farmers access weather insights and climate-smart farming
+                            guidance through a simple interface.
+                        </p>
+                        <ul class="project-points">
+                            <li>Designed around practical decisions farmers need to make quickly</li>
+                            <li>Focused on clarity, usefulness, and simple mobile navigation</li>
+                        </ul>
+                        <div class="project-links">
+                            <span class="project-note">Prototype and concept work</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="project-visual statement">
+                        <span>Education utility app</span>
+                    </div>
+
+                    <div class="featured-body">
+                        <h3>EZ Statement ZM</h3>
+                        <div class="tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Education</span>
+                        </div>
+                        <p>
+                            A Flutter app that helps students and parents quickly access Examination Council of Zambia
+                            statements with less friction.
+                        </p>
+                        <ul class="project-points">
+                            <li>Built around a common student problem with a clear, task-first flow</li>
+                            <li>Focused on accessibility, speed, and ease of use</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://ezstatementszm.vercel.app/" class="project-btn" target="_blank"
+                                rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="project-visual blog">
+                        <span>Full-stack publishing app</span>
+                    </div>
+
+                    <div class="featured-body">
+                        <h3>Blogging Platform</h3>
+                        <div class="tags">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>SQLite</span>
+                            <span>Full Stack</span>
+                        </div>
+                        <p>
+                            A simple full-stack blogging platform built to explore content management, routing, and data
+                            handling with a clean user flow.
+                        </p>
+                        <ul class="project-points">
+                            <li>Shows backend structure, CRUD workflows, and lightweight persistence</li>
+                            <li>Built with simple architecture that is easy to understand and extend</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://mavwublog.vercel.app" class="project-btn" target="_blank"
+                                rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="section-heading compact">
+                <p class="eyebrow">More Projects</p>
+                <h2>Other builds and experiments.</h2>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Retail Management System</h3>
+                    <div class="tags">
+                        <span>Node.js</span>
+                        <span>SQLite</span>
+                        <span>CRUD</span>
+                    </div>
+                    <p>Inventory and sales tracking demo built to explore backend logic and data handling.</p>
+                    <div class="project-links">
+                        <a href="https://retail-management-system-rhf7.onrender.com" class="project-btn" target="_blank"
+                            rel="noopener noreferrer">View Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Public Profile Analyzer</h3>
+                    <div class="tags">
+                        <span>Flask</span>
+                        <span>Python</span>
+                        <span>Web</span>
+                    </div>
+                    <p>Checks username availability across multiple platforms with a lightweight web interface.</p>
+                    <div class="project-links">
+                        <a href="https://public-profile-analyzer.vercel.app/" class="project-btn" target="_blank"
+                            rel="noopener noreferrer">View Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <p>A personal portfolio focused on clean presentation, conversion, and better project storytelling.</p>
+                    <div class="project-links">
+                        <a href="https://mavwu.github.io" class="project-btn" target="_blank"
+                            rel="noopener noreferrer">View Project</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="services" class="section services">
+            <div class="section-heading">
+                <p class="eyebrow">Services</p>
+                <h2>What I can help you build.</h2>
                 <p>
-                    Simple web apps and dashboards for managing data, users, or internal
-                    workflows using modern backend technologies.
+                    I work best on clear, practical projects that need fast delivery, simple workflows, and a polished
+                    user experience.
                 </p>
             </div>
 
-            <div class="service-card">
-                <h3>Mobile App Development</h3>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Business Websites</h3>
+                    <p>Professional websites for businesses, schools, churches, apartments, and personal brands.</p>
+                    <ul class="service-list">
+                        <li>Landing pages and brochure sites</li>
+                        <li>Portfolio and profile websites</li>
+                        <li>Mobile-friendly redesigns</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <h3>Web Applications</h3>
+                    <p>Simple web apps and dashboards for managing users, records, or internal workflows.</p>
+                    <ul class="service-list">
+                        <li>CRUD systems</li>
+                        <li>Admin dashboards</li>
+                        <li>Forms and simple automation flows</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <h3>Flutter MVPs</h3>
+                    <p>Android mobile apps built for MVP ideas, student projects, and utility-based use cases.</p>
+                    <ul class="service-list">
+                        <li>Prototype interfaces</li>
+                        <li>Utility apps and student tools</li>
+                        <li>Task-focused mobile flows</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <h3>IT Support</h3>
+                    <p>Practical technical help for setup, troubleshooting, and keeping day-to-day systems working.</p>
+                    <ul class="service-list">
+                        <li>Windows setup and software installation</li>
+                        <li>Basic maintenance and troubleshooting</li>
+                        <li>General technical assistance</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="process-grid">
+                <article class="process-card">
+                    <span class="step-number">01</span>
+                    <h3>Understand the goal</h3>
+                    <p>We start with the problem, the audience, and what success should look like.</p>
+                </article>
+
+                <article class="process-card">
+                    <span class="step-number">02</span>
+                    <h3>Build something clear</h3>
+                    <p>I focus on clean structure, practical features, and a simple user journey.</p>
+                </article>
+
+                <article class="process-card">
+                    <span class="step-number">03</span>
+                    <h3>Launch and improve</h3>
+                    <p>Once it works well, we polish the details and prepare it for real use.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="section-heading">
+                <p class="eyebrow">Skills</p>
+                <h2>Tools I use to get work done.</h2>
+                <p>My stack stays practical: the right tools for small teams, clear workflows, and useful products.</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Frontend and UI</h3>
+                    <div class="chips">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+                        <span>Accessibility Basics</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Mobile and App Development</h3>
+                    <div class="chips">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Android MVPs</span>
+                        <span>Prototype Flows</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Backend and Data</h3>
+                    <div class="chips">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>SQLite</span>
+                        <span>REST APIs</span>
+                        <span>SQL CRUD</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <div class="chips">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>JavaScript</span>
+                        <span>Dart</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Tools and Workflow</h3>
+                    <div class="chips">
+                        <span>Git</span>
+                        <span>Debugging</span>
+                        <span>API Testing</span>
+                        <span>App Testing</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>IT and Productivity</h3>
+                    <div class="chips">
+                        <span>IT Troubleshooting</span>
+                        <span>Windows Setup</span>
+                        <span>Microsoft 365</span>
+                        <span>Software Installation</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="section-heading">
+                <p class="eyebrow">Contact</p>
+                <h2>Let us build something useful.</h2>
                 <p>
-                    Android mobile apps built with Flutter for MVPs, student projects,
-                    and small-scale applications. Available on request.
+                    If you need a website, landing page, admin tool, or Flutter MVP, I am ready to talk through the
+                    idea and help you shape it.
                 </p>
             </div>
 
-            <div class="service-card">
-                <h3>IT Support & Technical Assistance</h3>
-                <p>
-                    Basic IT support including system setup, software installation,
-                    troubleshooting, and general technical assistance.
-                </p>
-            </div>
-        </div>
-    </section>
+            <div class="contact-layout">
+                <div class="contact-card">
+                    <p class="contact-subtitle">
+                        The fastest way to reach me is by WhatsApp or email. I usually reply within a day.
+                    </p>
 
-    <!-- SKILLS -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
+                    <div class="contact-items">
+                        <a class="contact-item" href="tel:+260972073035">
+                            <i class="fas fa-phone"></i>
+                            <span>+260 97 2073035</span>
+                        </a>
 
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Software & Web Development</h3>
-                <div class="chips">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Flutter (Android)</span>
-                    <span>Node.js</span>
-                    <span>Express.js</span>
-                    <span>REST APIs</span>
+                        <a class="contact-item" href="mailto:viwaplayz@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>viwaplayz@gmail.com</span>
+                        </a>
+
+                        <a class="contact-item" href="https://wa.me/260972073035" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+
+                        <a class="contact-item" href="https://github.com/mavwu" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/mavwu</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="skill-card">
-                <h3>Programming Languages</h3>
-                <div class="chips">
-                    <span>Python</span>
-                    <span>Java</span>
-                    <span>JavaScript</span>
-                    <span>Dart</span>
+                <div class="contact-side">
+                    <div class="contact-panel-card">
+                        <h3>Best fit projects</h3>
+                        <ul class="contact-list">
+                            <li>Business websites and portfolios</li>
+                            <li>Student tools and education utilities</li>
+                            <li>Dashboards and simple admin systems</li>
+                            <li>Flutter prototypes and MVP builds</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-panel-card">
+                        <h3>Quick facts</h3>
+                        <ul class="contact-list">
+                            <li>Based in Zambia</li>
+                            <li>Focused on clean, lightweight builds</li>
+                            <li>Comfortable with both web and mobile work</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-            <div class="skill-card">
-                <h3>Databases & Backend</h3>
-                <div class="chips">
-                    <span>SQLite</span>
-                    <span>Firebase</span>
-                    <span>SQL (CRUD)</span>
-                    <span>Queries</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <h3>IT Support & Systems</h3>
-                <div class="chips">
-                    <span>IT Troubleshooting</span>
-                    <span>PC Maintenance</span>
-                    <span>Software Installation</span>
-                    <span>Windows Setup</span>
-                    <span>Active Directory (Basics)</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <h3>Microsoft 365</h3>
-                <div class="chips">
-                    <span>Word</span>
-                    <span>Excel</span>
-                    <span>PowerPoint</span>
-                    <span>Outlook</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <h3>Tools & Development Practices</h3>
-                <div class="chips">
-                    <span>Git</span>
-                    <span>Debugging</span>
-                    <span>API Testing</span>
-                    <span>App Testing</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-
-        <div class="contact-card">
-            <p class="contact-subtitle">Need a website or simple app? Let’s talk.</p>
-
-            <div class="contact-items">
-                <a class="contact-item" href="tel:+260972073035">
-                    <i class="fas fa-phone"></i>
-                    <span>+260 97 2073035</span>
-                </a>
-
-                <a class="contact-item" href="mailto:viwaplayz@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                    <span>viwaplayz@gmail.com</span>
-                </a>
-
-                <a class="contact-item" href="https://wa.me/260972073035" target="_blank" rel="noopener">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>WhatsApp Me</span>
-                </a>
             </div>
 
             <div class="socials modern-socials">
-                <a href="https://web.facebook.com/profile.php?id=61556678093170" target="_blank" rel="noopener"
-                    aria-label="Facebook">
+                <a href="https://github.com/mavwu" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://web.facebook.com/profile.php?id=61556678093170" target="_blank"
+                    rel="noopener noreferrer" aria-label="Facebook">
                     <i class="fab fa-facebook"></i>
                 </a>
-                <a href="https://www.youtube.com/@WanguCS" target="_blank" rel="noopener" aria-label="YouTube">
+                <a href="https://www.youtube.com/@WanguCS" target="_blank" rel="noopener noreferrer"
+                    aria-label="YouTube">
                     <i class="fab fa-youtube"></i>
                 </a>
-                <a href="https://www.tiktok.com/@mavwu" target="_blank" rel="noopener" aria-label="TikTok">
+                <a href="https://www.tiktok.com/@mavwu" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
                     <i class="fab fa-tiktok"></i>
                 </a>
-                <a href="https://wa.me/260972073035" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <a href="https://wa.me/260972073035" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                     <i class="fab fa-whatsapp"></i>
                 </a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Mavwu | Designed by Alfred Mavwu</p>
+        <p>&copy; <span id="year">2026</span> Mavwu. Built by Alfred Mavwu.</p>
     </footer>
 
     <script src="script.js"></script>
