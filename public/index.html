@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Client Payment Portal - initiate Airtel Money payment requests securely." />
+  <title>Client Payment Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spectral:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="card-header">
+        <p class="eyebrow">Client Payment Portal</p>
+        <h1>Pay by Airtel Money</h1>
+        <p class="subtitle">Secure, fast, and no manual USSD steps. You will receive a prompt on your phone to approve.</p>
+      </div>
+
+      <form id="payment-form" class="payment-form" novalidate>
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input id="fullName" name="fullName" type="text" placeholder="e.g. Chanda Mwale" required />
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" placeholder="e.g. +260972000000" required />
+          <small>Use full country code, no spaces.</small>
+        </div>
+
+        <div class="field">
+          <label for="amount">Amount (ZMW)</label>
+          <input id="amount" name="amount" type="number" min="1" step="0.01" placeholder="e.g. 250" required />
+        </div>
+
+        <div class="field">
+          <label for="note">Service / note (optional)</label>
+          <textarea id="note" name="note" rows="3" placeholder="Website deposit, admin dashboard, etc."></textarea>
+        </div>
+
+        <button id="pay-btn" class="btn" type="submit">
+          Pay with Airtel Money
+        </button>
+      </form>
+
+      <div id="status" class="status" aria-live="polite">
+        <div class="status-pill" data-state="idle">Waiting for details</div>
+        <p class="status-text">Fill in the form to start the payment request.</p>
+      </div>
+
+      <div id="receipt" class="receipt hidden">
+        <p class="receipt-title">Payment confirmed</p>
+        <button id="download-btn" class="btn ghost" type="button">Download Receipt</button>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="info-card">
+        <h2>How it works</h2>
+        <ol>
+          <li>Enter your details and confirm the amount.</li>
+          <li>We send a secure payment request to your phone.</li>
+          <li>Approve with your Airtel Money PIN.</li>
+        </ol>
+      </div>
+      <div class="info-card accent">
+        <h2>Need help?</h2>
+        <p>Contact Alfred Mavwu on WhatsApp at <strong>+260 97 2073035</strong>.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

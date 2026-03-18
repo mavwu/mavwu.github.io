@@ -153,7 +153,7 @@ main {
 }
 
 .hero {
-    padding-top: 42px;
+    padding-top: 28px;
 }
 
 .hero-inner,
@@ -170,8 +170,8 @@ main {
 
 .hero-inner {
     display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
-    gap: 22px;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
+    gap: 12px;
     align-items: stretch;
 }
 
@@ -185,16 +185,19 @@ main {
 .process-card,
 .skill-card,
 .contact-card,
-.contact-panel-card {
+.contact-panel-card,
+.social-card,
+.social-skills {
     background: var(--surface);
     border: 1px solid var(--line);
     box-shadow: var(--shadow-soft);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .hero-copy,
 .hero-panel {
     border-radius: var(--radius-xl);
-    padding: 34px;
+    padding: 28px;
     position: relative;
     overflow: hidden;
 }
@@ -232,17 +235,17 @@ main {
 }
 
 .hero-title {
-    font-size: clamp(2.6rem, 6vw, 4.8rem);
+    font-size: clamp(2.2rem, 4.8vw, 3.8rem);
     line-height: 1.05;
     letter-spacing: -0.05em;
     margin: 18px 0 16px;
-    max-width: 11ch;
+    max-width: 13ch;
 }
 
 .hero-subtitle {
     font-size: 1.03rem;
     color: var(--muted);
-    max-width: 58ch;
+    max-width: 64ch;
 }
 
 .hero-actions,
@@ -425,6 +428,24 @@ main {
     padding: 24px;
 }
 
+.hero-copy:hover,
+.hero-panel:hover,
+.about-text:hover,
+.highlight-card:hover,
+.featured-card:hover,
+.project-card:hover,
+.service-card:hover,
+.process-card:hover,
+.skill-card:hover,
+.contact-card:hover,
+.contact-panel-card:hover,
+.social-card:hover,
+.social-skills:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+    border-color: var(--blue-border);
+}
+
 .highlight-icon {
     width: 52px;
     height: 52px;
@@ -524,6 +545,22 @@ main {
     padding: 24px;
     display: flex;
     align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-visual span,
+.hero-highlights span,
+.tags span,
+.chips span {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-visual span:hover,
+.hero-highlights span:hover,
+.tags span:hover,
+.chips span:hover {
+    transform: translateY(-2px);
 }
 
 .project-visual span {
@@ -536,6 +573,59 @@ main {
     background: rgba(255, 255, 255, 0.14);
     border: 1px solid rgba(255, 255, 255, 0.18);
     backdrop-filter: blur(8px);
+    position: relative;
+    z-index: 2;
+}
+
+.mock-ui {
+    position: absolute;
+    inset: 24px 24px 70px;
+    display: grid;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+}
+
+.mock-bar {
+    height: 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.mock-row {
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.mock-row.short {
+    width: 70%;
+}
+
+.mock-card {
+    height: 36px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.mock-card.wide {
+    height: 54px;
+}
+
+.mock-pill {
+    justify-self: start;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 .project-visual.climate {
@@ -673,6 +763,130 @@ main {
     gap: 10px;
 }
 
+.social-grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.social-card,
+.social-skills {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-soft);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.social-shot {
+    min-height: 190px;
+    aspect-ratio: 16 / 9;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: -0.01em;
+    overflow: hidden;
+}
+
+.social-shot span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+    margin: 16px;
+}
+
+.social-shot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.25s ease;
+}
+
+.social-card:hover .social-shot img {
+    transform: scale(1.03);
+}
+
+.social-shot.tiktok {
+    background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.22), transparent 35%),
+        linear-gradient(135deg, #111827 0%, #0a84ff 100%);
+}
+
+.social-shot.instagram {
+    background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.22), transparent 35%),
+        linear-gradient(135deg, #f97316 0%, #db2777 55%, #0a84ff 100%);
+}
+
+.social-shot.youtube {
+    background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.2), transparent 35%),
+        linear-gradient(135deg, #dc2626 0%, #111827 100%);
+}
+
+.social-body {
+    padding: 22px;
+}
+
+.social-body h3 {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+}
+
+.social-meta {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.social-meta li {
+    position: relative;
+    padding-left: 18px;
+}
+
+.social-meta li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--blue);
+}
+
+.social-skills {
+    max-width: var(--max-width);
+    margin: 18px auto 0;
+    padding: 22px;
+}
+
+.social-skills h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.social-footnote {
+    max-width: var(--max-width);
+    margin: 16px auto 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
 .contact-layout {
     display: grid;
     grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
@@ -762,7 +976,8 @@ footer {
 
     .highlights-grid,
     .project-grid,
-    .process-grid {
+    .process-grid,
+    .social-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
@@ -825,7 +1040,8 @@ footer {
     .project-grid,
     .services-grid,
     .process-grid,
-    .skills-grid {
+    .skills-grid,
+    .social-grid {
         grid-template-columns: 1fr;
     }
 
@@ -847,6 +1063,10 @@ footer {
 
     .project-visual {
         min-height: 210px;
+    }
+
+    .social-shot {
+        min-height: 170px;
     }
 }
 
